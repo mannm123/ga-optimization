@@ -1,0 +1,32 @@
+Dữ liệu vật phẩm (value, weight):
+  Item 0: value=30, weight=13
+  Item 1: value=33, weight=16
+  Item 2: value=35, weight=15
+  Item 3: value=66, weight=20
+  Item 4: value=36, weight=15
+  Item 5: value=66, weight=13
+  Item 6: value=35, weight=20
+  Item 7: value=75, weight=5
+  Item 8: value=14, weight=18
+  Item 9: value=65, weight=10
+
+=== Bắt đầu tối ưu hóa GA ===
+
+Tối ưu mutation rate:
+  Rate = 0.01 → Fitness = 272
+  Rate = 0.03 → Fitness = 272
+  Rate = 0.05 → Fitness = 272
+  Rate = 0.07 → Fitness = 272
+  Rate = 0.09 → Fitness = 272
+  Rate = 0.11 → Fitness = 272
+  Rate = 0.13 → Fitness = 272
+  Rate = 0.15 → Fitness = 272
+  Rate = 0.18 → Fitness = 272
+  Rate = 0.20 → Fitness = 272
+  Rate = 0.22 → Fitness = 272
+  Rate = 0.24 → Fitness = 272
+  Rate = 0.26 → Fitness = 272
+  Rate = 0.28 → Fitness = 272
+  Rate = 0.30 → Fitness = 272
+
+✅ Mutation rate tối ưu: 0.01 đạt fitness = 272
