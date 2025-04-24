@@ -31,7 +31,7 @@ Phương pháp được sử dụng trong demo này là Random Search / Grid Sea
 
 - Đánh giá và chọn mutation rate cho kết quả tốt nhất.
 
-💻 4. Mã nguồn demo (Python) (đính kèm trong file index.py)
+💻 4. Mã nguồn demo (Python) (đính kèm trong file index.py) và file kết quả (đính kèm trong tệp output.txt)
 
 
 
