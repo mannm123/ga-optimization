@@ -1,32 +1,41 @@
 Dữ liệu vật phẩm (value, weight):
-  Item 0: value=30, weight=13
-  Item 1: value=33, weight=16
-  Item 2: value=35, weight=15
-  Item 3: value=66, weight=20
-  Item 4: value=36, weight=15
-  Item 5: value=66, weight=13
-  Item 6: value=35, weight=20
-  Item 7: value=75, weight=5
-  Item 8: value=14, weight=18
-  Item 9: value=65, weight=10
+  Item 0: value=41, weight=18
+  Item 1: value=96, weight=9 
+  Item 2: value=15, weight=11
+  Item 3: value=30, weight=19
+  Item 4: value=13, weight=13
+  Item 5: value=48, weight=13
+  Item 6: value=91, weight=20
+  Item 7: value=72, weight=15
+  Item 8: value=65, weight=18
+  Item 9: value=16, weight=8
 
 === Bắt đầu tối ưu hóa GA ===
 
 Tối ưu mutation rate:
-  Rate = 0.01 → Fitness = 272
-  Rate = 0.03 → Fitness = 272
-  Rate = 0.05 → Fitness = 272
-  Rate = 0.07 → Fitness = 272
-  Rate = 0.09 → Fitness = 272
-  Rate = 0.11 → Fitness = 272
-  Rate = 0.13 → Fitness = 272
-  Rate = 0.15 → Fitness = 272
-  Rate = 0.18 → Fitness = 272
-  Rate = 0.20 → Fitness = 272
-  Rate = 0.22 → Fitness = 272
-  Rate = 0.24 → Fitness = 272
-  Rate = 0.26 → Fitness = 272
-  Rate = 0.28 → Fitness = 272
-  Rate = 0.30 → Fitness = 272
+  Rate = 0.01 → Fitness = 252
+  Rate = 0.03 → Fitness = 259
+  Rate = 0.05 → Fitness = 259
+  Rate = 0.07 → Fitness = 259
+  Rate = 0.09 → Fitness = 259
+  Rate = 0.11 → Fitness = 259
+  Rate = 0.13 → Fitness = 259
+  Rate = 0.15 → Fitness = 259
+  Rate = 0.18 → Fitness = 259
+  Rate = 0.20 → Fitness = 259
+  Rate = 0.22 → Fitness = 259
+  Rate = 0.24 → Fitness = 259
+  Rate = 0.26 → Fitness = 259
+  Rate = 0.28 → Fitness = 259
+  Rate = 0.30 → Fitness = 259
 
-✅ Mutation rate tối ưu: 0.01 đạt fitness = 272
+✅ Mutation rate tối ưu: 0.03 đạt fitness = 259
+
+📦 Vật phẩm được chọn:
+  - Item 1: value = 96, weight = 9
+  - Item 6: value = 91, weight = 20
+  - Item 7: value = 72, weight = 15
+
+➡️  Tổng giá trị: 259, Tổng trọng lượng: 44
+
+Kết quả cho thấy giá trị mutation rate ảnh hưởng đáng kể đến hiệu quả tìm kiếm lời giải tối ưu, và mutation rate = 0.03 là lựa chọn phù hợp nhất trong trường hợp này.
