@@ -36,6 +36,7 @@ Phương pháp được sử dụng trong demo này là Random Search / Grid Sea
 
 
 📌 Kết luận
+
 Chúng ta đã tối ưu một tham số (mutation rate) của GA để giải bài toán Knapsack tốt hơn.
 
 Cách làm có thể mở rộng để:
