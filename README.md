@@ -31,70 +31,10 @@ Phương pháp được sử dụng trong demo này là Random Search / Grid Sea
 
 - Đánh giá và chọn mutation rate cho kết quả tốt nhất.
 
-💻 4. Mã nguồn demo (Python)
+💻 4. Mã nguồn demo (Python) (đính kèm trong file index.py)
 
 
-# Tạo dữ liệu bài toán Knapsack
-NUM_ITEMS = 10
-MAX_WEIGHT = 50
-items = [(random.randint(10, 100), random.randint(5, 20)) for _ in range(NUM_ITEMS)]
 
-# GA giải bài toán Knapsack với mutation rate tùy chỉnh
-def run_ga(mutation_rate, pop_size=100, gens=100):
-    def fitness(individual):
-        total_value = 0
-        total_weight = 0
-        for i in range(NUM_ITEMS):
-            if individual[i] == 1:
-                value, weight = items[i]
-                total_value += value
-                total_weight += weight
-        return total_value if total_weight <= MAX_WEIGHT else 0
-
-    def create_individual():
-        return [random.randint(0, 1) for _ in range(NUM_ITEMS)]
-
-    def crossover(p1, p2):
-        point = random.randint(1, NUM_ITEMS - 2)
-        return p1[:point] + p2[point:]
-
-    def mutate(individual):
-        for i in range(NUM_ITEMS):
-            if random.random() < mutation_rate:
-                individual[i] = 1 - individual[i]
-
-    population = [create_individual() for _ in range(pop_size)]
-    for _ in range(gens):
-        population = sorted(population, key=fitness, reverse=True)
-        next_gen = population[:10]
-        while len(next_gen) < pop_size:
-            p1, p2 = random.choices(population[:50], k=2)
-            child = crossover(p1, p2)
-            mutate(child)
-            next_gen.append(child)
-        population = next_gen
-
-    return fitness(population[0])
-
-# Tối ưu mutation rate
-def optimize_mutation_rate():
-    rates = np.linspace(0.01, 0.3, 15)
-    results = []
-    print("Tối ưu mutation rate:")
-    for rate in rates:
-        score = run_ga(mutation_rate=rate)
-        print(f"  Rate = {rate:.2f} → Fitness = {score}")
-        results.append((rate, score))
-
-    best = max(results, key=lambda x: x[1])
-    print(f"\n✅ Mutation rate tối ưu: {best[0]:.2f} đạt fitness = {best[1]}")
-
-if __name__ == "__main__":
-    print("Dữ liệu vật phẩm (value, weight):")
-    for i, (v, w) in enumerate(items):
-        print(f"  Item {i}: value={v}, weight={w}")
-    print("\n=== Bắt đầu tối ưu hóa GA ===\n")
-    optimize_mutation_rate()
 📌 Kết luận
 Chúng ta đã tối ưu một tham số (mutation rate) của GA để giải bài toán Knapsack tốt hơn.
 
